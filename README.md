@@ -1,6 +1,13 @@
 # Island
 unity3d学习项目，创建游戏世界，创建一个岛屿
 
+这套代码基于Unity5.3.0f4,C#
+
+如有错误，请指出，我会及时修改，谢谢。
+
+这套代码进度从[2-1](http://www.51zxw.net/show.aspx?id=33319&cid=454)到 [3-3](http://www.51zxw.net/show.aspx?id=33459&cid=454)
+
+
 遇到的问题：
 * 1、天空盒，在[Shot](https://github.com/teffy/Shot)项目中已经说过，5.x自带
 * 2、树、水、草等资源包，5.x上在Environment中，也可以去AssetStore（Window->AssetStore）中去下载，我的项目中下载了几个用，都是免费的

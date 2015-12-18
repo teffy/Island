@@ -5,17 +5,21 @@ public class GotoIsland : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        UnityEngine.UI.Button gotoIsland = GameObject.Find("Canvas/gotoMyIsland").GetComponent<UnityEngine.UI.Button>();
-        gotoIsland.onClick.AddListener(()=>gotoIslandScene(gameObject));
+        //UnityEngine.UI.Button gotoIsland = GameObject.Find("Canvas/gotoMyIsland").GetComponent<UnityEngine.UI.Button>();
+       
     }
 	
 	// Update is called once per frame
 	void Update () {
 	
 	}
-
-    private void gotoIslandScene(GameObject go)
+    void OnGUI()
     {
-        Application.LoadLevel("island");
+        if (GUI.Button(new Rect(0, 0, 150, 60), "上岛上去看看"))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("island");
+            //Application.LoadLevel("island");
+        }
     }
+
 }

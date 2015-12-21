@@ -20,6 +20,7 @@ public class GotoIsland : MonoBehaviour {
             UnityEngine.SceneManagement.SceneManager.LoadScene("island");
             //Application.LoadLevel("island");
         }
+
     }
 
 }

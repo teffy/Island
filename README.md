@@ -3,10 +3,10 @@ unity3d学习项目，创建游戏世界，创建一个岛屿
 
 这套代码基于Unity5.3.0f4,C#
 
+课程来自：
+[这里](http://www.51zxw.net/study.asp?vip=11885058)
+
 如有错误，请指出，我会及时修改，谢谢。
-
-这套代码进度从[2-1](http://www.51zxw.net/show.aspx?id=33319&cid=454)到 [3-10](http://www.51zxw.net/show.aspx?id=33490&cid=454)
-
 
 遇到的问题：
 * 1、天空盒，在上一个项目[Shot](https://github.com/teffy/Shot)中已经说过，5.x自带

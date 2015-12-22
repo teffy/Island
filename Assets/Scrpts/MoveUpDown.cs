@@ -14,7 +14,6 @@ public class MoveUpDown : MonoBehaviour {
 	void Update () {
         mspeed = speed * 2.0f;
         Vector3 position = transform.position;
-        print(position.y);
         if (position.y > 8.0f)
         {
             v = new Vector3(0, -mspeed, 0);

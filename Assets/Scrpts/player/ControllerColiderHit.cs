@@ -15,7 +15,7 @@ public class ControllerColiderHit : MonoBehaviour {
             dooropendtime += Time.deltaTime;
             if(dooropendtime > closedoortimer)
             {
-                closedoor(currentdoor);
+                dooro_o_c(currentdoor,false,door_close_sound,"closedoor");
                 dooropendtime = 0;
             }
         }
@@ -33,23 +33,15 @@ public class ControllerColiderHit : MonoBehaviour {
         print("hit");
         if(hit.gameObject.tag == "playerdoor" && !isdooropen)
         {
-            //hit.gameObject.GetComponent<AudioSource>().PlayOneShot(door_open_sound);
-            opendoor(hit.gameObject);
+            currentdoor = hit.gameObject;
+            dooro_o_c(currentdoor, true, door_open_sound, "opendoor");
         }
     }
-
-    void opendoor(GameObject door)
+    void dooro_o_c(GameObject door,bool open, AudioClip sound,string anmition)
     {
-        currentdoor = door;
-        door.GetComponent<AudioSource>().PlayOneShot(door_open_sound);
-        door.transform.parent.GetComponent<Animation>().Play("opendoor");
-        isdooropen = true;
+        isdooropen = open;
+        door.GetComponent<AudioSource>().PlayOneShot(sound);
+        door.transform.parent.GetComponent<Animation>().Play(anmition);
     }
 
-    void closedoor(GameObject door)
-    {
-        door.GetComponent<AudioSource>().PlayOneShot(door_close_sound);
-        door.transform.parent.GetComponent<Animation>().Play("closedoor");
-        isdooropen = false;
-    }
 }

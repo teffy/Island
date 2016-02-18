@@ -3,9 +3,7 @@ using System.Collections;
 
 public class ControllerRaycastHit : MonoBehaviour {
 
-	// Use this for initialization
 	void Start () {
-	
 	}
 	
 	// Update is called once per frame
@@ -17,6 +15,7 @@ public class ControllerRaycastHit : MonoBehaviour {
             {
                 GameObject currentdoor = hitInfo.collider.gameObject;
                 print("hit hit ");
+                currentdoor.SendMessage("doorcheck");
             }
         }
 	}

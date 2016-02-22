@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+//物理碰撞检测，主角身上单独使用
 public class ControllerColiderHit : MonoBehaviour {
 
 	// Use this for initialization
@@ -37,6 +37,7 @@ public class ControllerColiderHit : MonoBehaviour {
             dooro_o_c(currentdoor, true, door_open_sound, "opendoor");
         }
     }
+
     void dooro_o_c(GameObject door,bool open, AudioClip sound,string anmition)
     {
         isdooropen = open;
